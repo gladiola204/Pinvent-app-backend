@@ -14,7 +14,7 @@ export const app = express();
 
 // Middlewares
 app.use(cors({
-    origin: ["http://localhost:3000", "https://pinvent-app-pink.vercel.app"],
+    origin: ["http://localhost:3000", "https://pinvent-app-pink.vercel.app", "https://frontend-pinvent.reykez.pl"],
     credentials: true,
 }));
 app.use(express.json());
