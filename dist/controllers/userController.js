@@ -103,9 +103,8 @@ exports.loginUser = (0, express_async_handler_1.default)((request, response) => 
             httpOnly: true,
             expires: new Date(Date.now() + 1000 * 86400),
             sameSite: "none",
-            secure: true,
+            secure: false,
         });
-        console.log(response.cookie);
         response.status(200);
         response.json({
             _id, name, email, photo, phone, bio, token,
