@@ -40,7 +40,7 @@ const contactRoute_1 = require("./routes/contactRoute");
 exports.app = (0, express_1.default)();
 // Middlewares
 exports.app.use((0, cors_1.default)({
-    origin: ["http://localhost:3000", "https://pinvent-app-pink.vercel.app", "http://pinvent-app-pink.vercel.app"],
+    origin: ["http://localhost:3000", "https://pinvent-app-pink.vercel.app"],
     credentials: true,
 }));
 exports.app.use(express_1.default.json());
