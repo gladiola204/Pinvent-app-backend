@@ -112,6 +112,8 @@ export const loginUser = expressAsyncHandler( async (request: Request, response:
             secure: true,
         });
 
+        console.log(response.cookie);
+
         response.status(200);
         response.json({
             _id, name, email, photo, phone, bio, token,

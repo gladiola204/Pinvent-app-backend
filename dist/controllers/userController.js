@@ -105,6 +105,7 @@ exports.loginUser = (0, express_async_handler_1.default)((request, response) => 
             sameSite: "none",
             secure: true,
         });
+        console.log(response.cookie);
         response.status(200);
         response.json({
             _id, name, email, photo, phone, bio, token,
