@@ -16,7 +16,6 @@ export const app = express();
 app.use(cors({
     origin: ["http://localhost:3000", "https://pinvent-app-pink.vercel.app", "http://pinvent-app-pink.vercel.app"],
     credentials: true,
-    allowedHeaders: ["Access-Control-Allow-Credentials"]
 }));
 app.use(express.json());
 //app.use(bodyParser.json());
