@@ -103,7 +103,7 @@ exports.loginUser = (0, express_async_handler_1.default)((request, response) => 
             httpOnly: true,
             expires: new Date(Date.now() + 1000 * 86400),
             sameSite: "none",
-            secure: true,
+            secure: false,
             domain: 'pinvent-app-pink.vercel.app'
         });
         console.log(response.cookie);
