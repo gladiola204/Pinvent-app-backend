@@ -106,10 +106,10 @@ export const loginUser = expressAsyncHandler( async (request: Request, response:
 
         response.cookie('token', token, {
             path: '/',
-            httpOnly: true,
+            httpOnly: false,
             expires: new Date(Date.now() + 1000 * 86400), // 1 day
             sameSite: "none",
-            secure: false,
+            secure: true,
         });
 
         response.status(200);

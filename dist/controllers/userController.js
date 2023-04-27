@@ -100,10 +100,10 @@ exports.loginUser = (0, express_async_handler_1.default)((request, response) => 
         const token = generateToken(userExists._id);
         response.cookie('token', token, {
             path: '/',
-            httpOnly: true,
+            httpOnly: false,
             expires: new Date(Date.now() + 1000 * 86400),
             sameSite: "none",
-            secure: false,
+            secure: true,
         });
         response.status(200);
         response.json({
