@@ -109,7 +109,7 @@ export const loginUser = expressAsyncHandler( async (request: Request, response:
             httpOnly: true,
             expires: new Date(Date.now() + 1000 * 86400), // 1 day
             sameSite: "none",
-            secure: true,
+            secure: false,
         });
 
         response.status(200);
