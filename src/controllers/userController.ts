@@ -109,7 +109,7 @@ export const loginUser = expressAsyncHandler( async (request: Request, response:
             httpOnly: true,
             expires: new Date(Date.now() + 1000 * 86400), // 1 day
             sameSite: "none",
-            domain: 'pinvent-app-pink.vercel.app',
+            domain: 'https://pinvent-app-pink.vercel.app',
             secure: true,
         });
 
